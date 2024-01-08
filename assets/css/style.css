@@ -91,8 +91,21 @@ main {
     flex: 1 0 auto;
 }
 
-footer {
-    background-color: orange;
+/* -----------------------footer------------------ */
+
+#social-network{
+    background-color: #fff;
+    padding: 20px 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-network i{
+    color: #3a3a3a;
+    padding: 5%;
+    font-size: 160%;
 }
 
 
@@ -103,7 +116,6 @@ footer {
     nav{
         display: block;
         position: relative;
-        
         box-shadow: none;
         width: fit-content;
         padding-right: 1rem;
@@ -112,6 +124,7 @@ footer {
         display: flex;
         justify-content: center;
         padding-top: 18px;
+
     }
     #menu > li{
         padding-left: 1rem;
