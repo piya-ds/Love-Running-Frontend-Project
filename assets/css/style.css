@@ -1,6 +1,8 @@
 /* google font import */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
+
+/* ------------general style--------------- */
 * {
     padding: 0;
     margin: 0;
@@ -14,6 +16,13 @@ body {
     flex-direction: column;
     color: #3a3a3a;
     font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
 }
 
 header {
@@ -33,12 +42,7 @@ header a{
     color: inherit;
 }
 
-h1 {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525;
-}
+
 
 #menu{
     letter-spacing: 4px;
@@ -85,13 +89,35 @@ nav > li{
     font-weight: bolder;
 }
 
+/* -----------------------footer------------------ */
+
 main {
-    background-color: lightblue;
+     
     /* content takes full screen */
     flex: 1 0 auto;
+    margin-top: 47px;
+    background: url(../images/hero-image.webp) no-repeat center center/cover;
+    height: 600%;
+    width: 100%;  
+    position: relative;
+    
 }
 
-/* -----------------------footer------------------ */
+.hero {
+    
+}
+
+#cover-text{
+    position: absolute;
+    background-color: rgba(241, 109, 107, .7);
+    font-size: 130%;
+    width: 80%;
+    min-height: 120px;
+    padding-top: 30px;
+    padding-left: 10px;
+    bottom: 20px;
+}
+
 
 #social-network{
     background-color: #fff;
@@ -140,10 +166,13 @@ main {
     main{
         margin-top: 79px;
     }
-
+    #cover-text {
+        width: 300px;
+        right: 50px;
+    }
+}
     @media screen and (min-width: 992px) {
         #menu a:hover{
             border-bottom: 1px solid #3a3a3a;
         }
     }
-}
